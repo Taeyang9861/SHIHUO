@@ -80,3 +80,5 @@ mapState= state=> state.树枝.叶子
 --装饰器 实验性的东西 就一个版本 addDecoratorsLegacy form customer_cra
 
 --函数式组件没有this, 传参直接当做参数放进去,也可以解构赋值
+
+--git 步骤
