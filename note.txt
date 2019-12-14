@@ -82,3 +82,13 @@ mapState= state=> state.树枝.叶子
 --函数式组件没有this, 传参直接当做参数放进去,也可以解构赋值
 
 --git 步骤
+-本地创建文件夹,通过命令git init把这个文件夹变成Git可管理的仓库
+-通过git status来查看状态
+-通过git add . 把项目添加到仓库
+-git commit -m '提示'
+--git commit -am '提示'(以上两个命令的合并)
+-在Github上创建一个Git仓库 复制地址https或ssh
+-git remote add origin 复制的地址
+-git push -u origin master (首次)
+
+-git log 查看提交
