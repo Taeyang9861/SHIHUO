@@ -113,3 +113,7 @@ mapState= state=> state.树枝.叶子
 -git checkout xx 切换到分支检查代码
 -git merge xx 代码无误切回到master,merge分支代码到主分支
 -git push
+
+--git branch -D 分支名 删除本地分支
+
+http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html

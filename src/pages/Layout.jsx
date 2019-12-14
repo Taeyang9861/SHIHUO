@@ -3,6 +3,7 @@ import React, {Component} from 'react'
 import { TabBar } from 'antd-mobile';
 
 import Home from './home/Home'
+import Discount from './discount/Discount'
 
 export default class Layout extends Component {
   constructor(props) {
@@ -73,7 +74,7 @@ export default class Layout extends Component {
             }}
             data-seed="logId1"
           >
-            <div>b</div>
+            <Discount></Discount>
           </TabBar.Item>
           <TabBar.Item
             icon={
