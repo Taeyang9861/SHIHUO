@@ -92,3 +92,15 @@ mapState= state=> state.树枝.叶子
 -git push -u origin master (首次)
 
 -git log 查看提交
+
+--git clone 地址
+-cd 目录
+-git branch查看当前分支
+-git branch -a/--all 查看远端和本地所有分支
+-git checkout -b 分支名  创建并切换到分支
+-编写代码
+
+-git checkout master 切换到主分支master
+-git pull 拉取最新的master
+-git checkout gw 切换到分支gw
+-git merge master 合并指定分支到当前分支 默认一次提交
