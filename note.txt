@@ -93,6 +93,7 @@ mapState= state=> state.树枝.叶子
 
 -git log 查看提交
 
+--(我的工作)首次拉取代码
 --git clone 地址
 -cd 目录
 -git branch查看当前分支
@@ -104,3 +105,11 @@ mapState= state=> state.树枝.叶子
 -git pull 拉取最新的master
 -git checkout gw 切换到分支gw
 -git merge master 合并指定分支到当前分支 默认一次提交
+-git push
+
+--master工作
+-git fetch 查看变化
+-git branch -a 查看所有分支
+-git checkout xx 切换到分支检查代码
+-git merge xx 代码无误切回到master,merge分支代码到主分支
+-git push
