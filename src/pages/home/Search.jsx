@@ -7,7 +7,7 @@ export default class Search extends Component {
         <form id="searchBox" method="get" className="searchBox">
           <div className="search_box">
             <div className="search">
-              <input type="text" className="input" name="keywords" placeholder="搜索商品，品牌" id="searchVal" />
+              <input type="text" className="input" name="keywords" placeholder="搜索商品，品牌" />
               <input type="reset" className="sh_searchClear" title="重置搜索词" style={{display: 'none'}} />
             </div>
             <a href="//m.shihuo.cn/user#qk=t_gr" className="me">

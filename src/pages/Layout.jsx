@@ -9,7 +9,7 @@ export default class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'homeTab',
+      selectedTab: 'discountsTab',
       hidden: false,
       fullScreen: true,
     };
