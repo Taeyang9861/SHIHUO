@@ -7,4 +7,11 @@ module.exports = function(app) {
       changeOrigin: true,
     })
   )
+  app.use(
+    '/youhui',
+    proxy({
+      target: 'http://m.shihuo.cn',
+      changeOrigin: true,
+    })
+  )
 }

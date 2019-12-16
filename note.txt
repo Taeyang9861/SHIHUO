@@ -117,3 +117,15 @@ mapState= state=> state.树枝.叶子
 --git branch -D 分支名 删除本地分支
 
 http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html
+
+
+--redux 开发范式：
+1、按照功能组织目录
+- 容器组件
+- UI组件（展示组件，木偶组件）
+- action-types
+- action-creator
+- reducers
+- sagas
+- index
+2、按照角色组织目录

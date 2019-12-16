@@ -5,7 +5,8 @@ import { get } from 'utils/http'
 export default class Listelem extends Component {
   state = {
     itemList: [],
-    listtype: ''
+    listtype: '',
+    r: ''
   }
 
   async componentDidMount() {
@@ -17,13 +18,24 @@ export default class Listelem extends Component {
 
     // console.log(this.state.listtype)
 
-    let result = await get({
-      url: `/homefis/getNews?pageSize=20&param_str=&type=${this.props.listtype}&channel_type=${this.props.channel_type}`
-    })
+    if(this.props.r !== '999'){
+      let result = await get({
+        url: `/homefis/getNews?pageSize=20&param_str=&type=${this.props.listtype}&channel_type=${this.props.channel_type}`
+      })
+      this.setState({
+        itemList: result.data
+      })
+    }
+    else {
+      let result = await get({
+        url: '/youhui/list?r=1&page=1&page_size=30&publish_date='
+      })
+      this.setState({
+        itemList: result.data
+      })
+    }
 
-    this.setState({
-      itemList: result.data
-    })
+
 
     // console.log(this.state.itemList)
 
