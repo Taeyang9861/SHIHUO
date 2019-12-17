@@ -4,9 +4,8 @@ import { get } from 'utils/http'
 
 export default class Listelem extends Component {
   state = {
-    itemList: [],
-    listtype: '',
-    r: ''
+    homeItemList: [],
+    listtype: ''
   }
 
   async componentDidMount() {
@@ -18,22 +17,12 @@ export default class Listelem extends Component {
 
     // console.log(this.state.listtype)
 
-    if(this.props.r !== '999'){
       let result = await get({
         url: `/homefis/getNews?pageSize=20&param_str=&type=${this.props.listtype}&channel_type=${this.props.channel_type}`
       })
       this.setState({
-        itemList: result.data
+        homeItemList: result.data
       })
-    }
-    else {
-      let result = await get({
-        url: '/youhui/list?r=1&page=1&page_size=30&publish_date='
-      })
-      this.setState({
-        itemList: result.data
-      })
-    }
 
 
 
@@ -46,7 +35,7 @@ export default class Listelem extends Component {
       <div className="list-view">
         <ul id="shihuo-news">
           {
-            (this.state.itemList.length !== 0) && (this.state.itemList.map((value, index) => {
+            (this.state.homeItemList.length !== 0) && (this.state.homeItemList.map((value, index) => {
               return (
                 <li key={index}>
                   <a className="link-a clearfix">
