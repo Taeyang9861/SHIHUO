@@ -5,12 +5,13 @@ import { TabBar } from 'antd-mobile';
 import Home from './home/Home'
 import Discount from './discount/Discount'
 import Discovery from './discovery/Discovery'
+import Equip from './equip/Equip'
 
 export default class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'findTab',
+      selectedTab: 'equipTab',
       hidden: false,
       fullScreen: true,
     };
@@ -115,7 +116,7 @@ export default class Layout extends Component {
               });
             }}
           >
-            <div>d</div>
+            <Equip></Equip>
           </TabBar.Item>
           <TabBar.Item
             icon={

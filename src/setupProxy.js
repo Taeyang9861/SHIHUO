@@ -21,4 +21,11 @@ module.exports = function(app) {
       changeOrigin: true,
     })
   )
+  app.use(
+    '/zhuangbei',
+    proxy({
+      target: 'http://m.shihuo.cn',
+      changeOrigin: true,
+    })
+  )
 }
