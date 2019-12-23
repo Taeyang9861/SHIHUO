@@ -168,6 +168,7 @@ export const Hotwrap = styled.div`
 `
 
 export const Hotactwrap = styled.div`
+
 .hot-activity {
   background: #FFF;
   margin: .08rem 0 .14667rem;
@@ -231,3 +232,4 @@ export const Hotactwrap = styled.div`
   }
 }
 `
+

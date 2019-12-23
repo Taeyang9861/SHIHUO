@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 
-import Headswipe from './Headswipe'
+import Headswipe from '@/Headswipe'
+import { Headswipewrap } from '@/Headswipewrap.js'
 import Search from './Search'
 import Swipe from './Swipe'
 import Picbanner from './Picbanner'
@@ -13,7 +14,9 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Headswipe></Headswipe>
+        <Headswipewrap>
+          <Headswipe></Headswipe>
+        </Headswipewrap>
         <SearchWrap>
           <Search></Search>
         </SearchWrap>

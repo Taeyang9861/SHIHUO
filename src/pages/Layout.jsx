@@ -6,12 +6,13 @@ import Home from './home/Home'
 import Discount from './discount/Discount'
 import Discovery from './discovery/Discovery'
 import Equip from './equip/Equip'
+import More from './more/More'
 
 export default class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'equipTab',
+      selectedTab: 'homeTab',
       hidden: false,
       fullScreen: true,
     };
@@ -142,7 +143,7 @@ export default class Layout extends Component {
               });
             }}
           >
-           <div>e</div>
+           <More></More>
           </TabBar.Item>
         </TabBar>
       </div>
