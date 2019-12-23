@@ -4,12 +4,13 @@ import { TabBar } from 'antd-mobile';
 
 import Home from './home/Home'
 import Discount from './discount/Discount'
+import Discovery from './discovery/Discovery'
 
 export default class Layout extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      selectedTab: 'discountsTab',
+      selectedTab: 'findTab',
       hidden: false,
       fullScreen: true,
     };
@@ -100,7 +101,7 @@ export default class Layout extends Component {
               });
             }}
           >
-           <div>c</div>
+           <Discovery></Discovery>
           </TabBar.Item>
           <TabBar.Item
             icon={{ uri: 'http://sh1.hoopchina.com.cn/images/trademobile/common/zhuangbei.png?201903111600' }}
