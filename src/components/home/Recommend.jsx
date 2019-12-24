@@ -5,7 +5,6 @@ import Listelem from './Listelem'
 
 import { Listitemwrap } from './listviewStyled'
 
-
 const tabs = [
   { title: '全部', sub: '1' },
   { title: '单品推荐', sub: '2' },
@@ -18,22 +17,22 @@ const Recommend = (props) => (
       initialPage={0}
       tabBarUnderlineStyle={{border: 'none'}}
     >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <Listitemwrap>
           <Listelem listtype={props.listtype} channel_type=''></Listelem>
         </Listitemwrap>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <Listitemwrap>
           <Listelem listtype={props.listtype} channel_type='11'></Listelem>
         </Listitemwrap>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <Listitemwrap>
           <Listelem listtype={props.listtype} channel_type='12'></Listelem>
         </Listitemwrap>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
+      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
         <Listitemwrap>
           <Listelem listtype={props.listtype} channel_type='7'></Listelem>
         </Listitemwrap>

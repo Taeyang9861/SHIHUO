@@ -17,7 +17,7 @@ const Listview = () => (
     <Tabs tabs={tabs}
       initialPage={0}
       tabBarActiveTextColor={'#FF4338'}
-      tabBarUnderlineStyle={{ borderColor: '#FF4338', width: '.45333rem', textAlign: 'center', }}
+      tabBarUnderlineStyle={{ borderColor: '#FF4338', textAlign: 'center', }}
     >
       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#fff' }}>
         <Recommend listtype=''></Recommend>
